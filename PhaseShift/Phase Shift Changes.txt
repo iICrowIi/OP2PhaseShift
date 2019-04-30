@@ -1,0 +1,114 @@
+Introduction:
+
+Phase Shift is designed to force the player to shift from one strategy to the next as each new phase of the game is reached.
+This is accomplished by forcing the player to build base structures to new locations more regularly, by making it more essential to at some point devote effort to colony growth, by pacing military progress so Eden and Plymouth are likely to alternate control of the map, and by opening new useful strategies for the end game, particularly for Eden.
+
+Below is an enumeration of all the changes that Phase Shift makes to Outpost 2's gameplay.
+The Morale portion of the modifications are contingent on playing on a map designed for use with Phase Shift.  Everything else will work even on "normal" multiplayer and colony mission games.
+Of course, when Phase Shift is active, AI players that are designed for the base version of the game may not behave properly.
+
+
+--------------
+
+Game Rules Changes:
+
+Spent mines fall down to nearly zero output, requiring expansion to new, presumably harder to defend mining beacons as the game progresses.
+	All below numbers are for non-upgraded common mines.
+	1-bar mines give out ~16,000 ore before falling to 30 per load.
+	2-bar mines give out ~24,000 ore before falling to 40 per load.
+	3-bar mines give out ~32,000 ore before falling to 50 per load.
+	All mines now reach their peak at 2/3 of the way through their normal output period.  This way, the player can check if a mine is losing output, and if so, know that it is close to the end of its rope.
+	Mine variants within a bar may give 10% more or less ore total.  The ones that give more ore at the start will eventually award less ore total.
+	
+Morale has a maximum permitted level based on how many morale relevant structures have been researched:
+	- Base maximum: 30
+	- Nursery: +5
+	- University: +5
+	- GORF: +5
+	- Consumer Goods / Forum: +10
+	- DIRT: +10
+	- Medical Centers: +15
+	- Recreational Facilities: +20
+
+
+Both Colonies:
+
+Command Center cost down to 1800, building time down to 2200 "points" (was 2800 for each).
+Structure Factory cost down to 1600, building time down to 2000 "points" (was 2500 for each).
+Cargo Truck common/rare cost down to 600/0 pre-reinforced vehicle tech and 375/75 after (was 800/0 before, 500/100 after).
+	These changes go hand-in-hand with the mining beacon change.  This is to support the idea that you will sometimes not build an extra smelter right next to new mine if it is close, and might have to produce a brand new base if it is far.
+Tokamak cost increased slightly to 1250 (was 1100).
+Solar Panel power output increased to 600 (was 400), building common/rare cost reduced to 200/200 (was 500/500), satellite common/rare cost reduced to 500/100 (was 1000/200).
+DIRT Procedural Review now changes Worker/Scientist requirement from 2/1 to 1/1 (was from 2/1 to 3/1 as a net downgrade).
+Robo-Miners no longer become more expensive as new mining tech is researched.
+	I believe the only reason they even did this was that SOME property of a unit must change for the upgrade text to show up on it.  My "change" will now be "The cost now = what it was before already."
+Earthquake concussive / penetration damage swapped to 25/55 (was 60/25), so it works better vs buildings and less well against vehicles than at present.
+	The game would benefit from a "bonus vs buildings" damage type, but that would require a pretty extensive coding change.
+Garage cost down to 900 (was 1500), construction time down to 1000 (was 1500). 
+Guard post base cost down to 100 (was 250), explosion damage down to 200 (was 750), HP up to 750 (was 500).
+Panthers have more HP both pre and post upgrade, to 600->850 (was 500->750; Tiger is 800).  Research cost and scientist count increased to match new higher value.
+Tiger chassis cost up to 1000+400 (was 750+250).
+Extended Range Projectile Launcher upgrade is now Plymouth exclusive, while Grenade Loading Mechanism is Eden exclusive.
+EMP's base reload time slowed to 155 (was 140).
+	Eden still gets the original post-upgrade reload time of 120.
+Scout Class Drive Train research is now Plymouth only.  Eden gets a Lynx HP upgrade instead.
+Advanced Robot Manipulator Arm tech's bonuses for Earthworker and Robo Dozer improved to 128->64 (was 128->96).
+Concrete Wall HP up to 450 (was 300).
+Hypnopaedia effect improved, for Eden 5000->3500, for Plymouth 5000->4000 (was 5000->3750 for Eden, 5000->4500 for Plymouth).
+
+
+Plymouth:
+
+MHD cost down to 800/400 (was 1000/500).
+Legged Robots tech has no prereqs.
+Arachnid Weaponry can be researched from the Standard Lab and only requires Legged Robots tech.
+New upgrade: Scorpion Mobility.  Increases Scorpion movement speed from Fast to Very Fast.  Prereq = Arachnid Weaponry.  Researched at the Advanced Lab.
+Scorpion Power Systems also increases range by 2.  Requires Independent Turret Power Systems and Advanced Vehicle Power Plant.
+Arachnid Durability now upgrades Spider HP 100->150, and Scorpion HP 125->200 (was 100->125 and 125->150).  Now available at the Standard Lab.
+Focused Microwave Projection now requires Arachnid Weaponry, thereby delaying the Plymouth research tree by two topics.
+Various research time costs have changed to support the new ordering: Legged Robots 1800->1600, Arachnid Weaponry 1800->1400.
+ESG turning speed slower to 2 (was 11).
+Electromagnetic Reverberations research added: increases EMP Penetration "damage" to 320 (from 255), for (as I understand it) a better chance to land the disable.
+Rocket Atmospheric Re-entry System research cost increased to 5600 (was 4500), maximum scientists assignable up to 16 (was 14).
+
+
+Eden:
+
+Improved Launch Vehicle research cost reduced to 4500 (was 6000).
+Geothermal Power Plant output increased to 650 baseline (was 500); Heat Mining research topic removed.
+Laser damage up slightly both pre- and post- upgrade, now 40->50 (was 35->45).
+Heat Dissipation Systems renamed to Thor Heat Dissipators.  Only affects Thors, and the effect is improved to 120->90 (was 120->100).
+	This is to make room for newer, cooler upgrades for the other weapons.
+Shrapnel Shaping research added: increases Starflare concussion/penetration damage to 500/1500 (from 500/1000).
+Railguns no longer require Advanced Combat Chassis. (Still requires Independent Turret Power Systems.)
+Railgun turning rate slowed to 3 (was 11).
+Increased Capacitance Circuitry now increases Railgun damage 80/40->120/60 (was 80/40->100/50).  Also, it gains Advanced Combat Chassis prereq to return that upgrade to its normal timing.
+Railgun Rifling research added: Range +2.  Prereq = Increased Capacitance Circuitry.
+Acid Cloud turning speed up to 9 (was 6) and AoE increased to 64 (was 48) to better match graphics and handle high speed targets better.
+Corrosive Catalysts research added: increase Acid Cloud concussion/penetration damage from 15/10 to 25/10.
+Light Tank Part Redundancy research added: Lynx HP up to 400 (from 300).  Prereq = Mobile Weapons + Reinforced Vehicle Construction.
+Diode Lasers research added: Laser weapon cost 450->275.  Prereq = Efficiency Engineering + Lasers.
+Meteor Defense construction time down to 1100 points (was 1800), construction cost down to 1200/600 (was 1800/600), and worker requirement down to 1 (was 2).
+Precision Trajectory Projection Software's upgrade is now automatic with Meteor Defense's base research.
+Observatory required scientist count down to 1 (was 3).
+
+
+Tech tree cleanups:
+
+Hot Cracking Column Efficiency removed.
+Vulcanology is awarded for free when Seismology researched.
+Robotic Image Processing is removed, and its effects are built in to the Scout and Light Post.
+Consumerism research correctly identifies itself as having unlocked the Consumer Goods Factory structure kit instead of the University structure kit in the post-completion teaser.
+
+
+Summary of new combat flow:
+
+In low intial resource games, particularly if the bases are close by, Plymouth can potentially get the first strike in if it sacrifices vehicle factory tech to rush scorpions.  However, unupgraded scorpions are so weak that the defender can probably survive until combat units are out.
+Either way, Plymouth has to decide whether to commit to the new scorpion technologies or to skip that in favor of more traditional weapons.
+Eden gets the next technological edge with the early completion of Railguns.  Though overcosted for their DPS, these weapons are longer range than anything else in the game until after a lot more research has been completed.
+Next up should be the usual oppressive Plymouth midgame.  Stickyfoam has remained untouched, and in a long range battle, the ESG's turn rate nerf should have minimal impact.
+As the game progresses, Eden will gain more cost efficiency in slow moving battles in the form of the railgun range upgrade, higher HP Lynxes, and the slight improvement to the Thor.
+EMP Missiles are still extremely opressive once Plymouth gains them, and with Eden's loss of the Lynx speed upgrade, dodging them is harder than ever.  Eden will have to use its power to secure positions for new Meteor Defense structures.  
+It is my intention for more combat-relevant construction to occur.  Guard posts are better in both durability and liability (they'll do far less damage to your own units when destroyed, for example), walls can be upgraded, and garages and meteor defenses are easier to set up.
+I expect Plymouth to be using garages to be more cost efficient with its hit and run missions, with ESG turrets behind walls when it needs to deny an area.  Eden will more likely put Railgun turrets in front, with meteor defenses behind that.
+Another major point: the total size of end game armies will likely be smaller due to the smaller amount of resources available in the first place.
