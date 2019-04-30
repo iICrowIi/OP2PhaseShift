@@ -1,4 +1,4 @@
-Phase Shift v0.4.0
+Phase Shift v0.4.2
 
 Phase Shift is a modification of Outpost 2 that alters the game flow in a number of ways.  Check Phase Shift Changes.txt for details.
 It relies on OP2ext, which is included in the community build of the game, available at https://www.outpost2.net
