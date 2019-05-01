@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b5dd45bf-ef3d-41b2-a0e3-fc835ec641b7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{39da49d1-4075-4d57-859a-4ee856d0278c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Outpost2DLL">
+      <UniqueIdentifier>{eae20e3f-295d-42be-ab9f-da3394696b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OP2Helper">
+      <UniqueIdentifier>{c2596451-9ace-4097-825a-a519ddfadb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d01e8bee-6a97-4531-99ac-fb87c9a34361}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OP2Helper\BaseBuilder.cpp">
+      <Filter>OP2Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OP2Helper\OP2Helper.cpp">
+      <Filter>OP2Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="BeaconData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Enumerators.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Enums.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Functions.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Groups.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\MapIdEnum.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\NonExportedEnums.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Outpost2DLL.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Player.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\RequiredExports.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Structs.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\TethysGame.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Outpost2DLL\Units.h">
+      <Filter>Outpost2DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OP2Helper\BaseBuilder.h">
+      <Filter>OP2Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OP2Helper\EnumSoundID.h">
+      <Filter>OP2Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OP2Helper\EnumTechID.h">
+      <Filter>OP2Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OP2Helper\OP2Helper.h">
+      <Filter>OP2Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="BeaconData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,15 +1,26 @@
-Phase Shift v0.4.2
+Phase Shift v0.5.0
 
 Phase Shift is a modification of Outpost 2 that alters the game flow in a number of ways.  Check Phase Shift Changes.txt for details.
 It relies on OP2ext, which is included in the community build of the game, available at https://www.outpost2.net
 
 The ZIP file is designed to be extracted directly into the installation folder for Outpost 2.  Then, run Outpost2.exe /loadmod PhaseShift to tell the game to use these modified game files.
 
+An example Space Race map, Ohana, is also provided.  It depends on the Outpost Universe's SDK.
+
 - Crow!
 
 
 
 Version log:
+
+v0.5.0
+Updated packaged Ohana map and scenario to version 0.5, which fixes some terrain, makes the first common and first rare mine always the same variant, and replaces the backdoor 1-bar common with a 1-bar rare, and increases the initial metals for Medium and Low starting resources.
+GitHub release now features Ohana's source code.
+Common Ore Smelter, Rare Ore Smelter, and Robot Command Center costs reduced slightly.
+Robot-Assist Mechanic tech removed.  Garage is now available with Cybernetic Teleoperation.
+Advanced Robot Manipulator Arm's prerequisite is now Advanced Vehicle Power Plant.
+Scout-Class Drive Train Refit cost up to 2800 (was 1800) and now requires Advanced Vehicle Power Plant.
+All starship components (including the cargoes) cost 25% less common and rare metals.
 
 v0.4.2
 Fixed a bug where the Diode Lasers upgrade couldn't be researched.

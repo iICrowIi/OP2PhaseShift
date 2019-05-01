@@ -35,26 +35,31 @@ Both Colonies:
 
 Command Center cost down to 1800, building time down to 2200 "points" (was 2800 for each).
 Structure Factory cost down to 1600, building time down to 2000 "points" (was 2500 for each).
+Common Ore Smelter cost down to 1700, building time down to 1800 "points" (was 2000 for each).
+Rare Ore Smelter cost down to 2000, building time down to 2100 "points" (was 2500 for each).
 Cargo Truck common/rare cost down to 600/0 pre-reinforced vehicle tech and 375/75 after (was 800/0 before, 500/100 after).
 	These changes go hand-in-hand with the mining beacon change.  This is to support the idea that you will sometimes not build an extra smelter right next to new mine if it is close, and might have to produce a brand new base if it is far.
 Tokamak cost increased slightly to 1250 (was 1100).
+Robot Command Center common metal cost down to 1250 (was 1500).
 Solar Panel power output increased to 600 (was 400), building common/rare cost reduced to 200/200 (was 500/500), satellite common/rare cost reduced to 500/100 (was 1000/200).
 DIRT Procedural Review now changes Worker/Scientist requirement from 2/1 to 1/1 (was from 2/1 to 3/1 as a net downgrade).
 Robo-Miners no longer become more expensive as new mining tech is researched.
 	I believe the only reason they even did this was that SOME property of a unit must change for the upgrade text to show up on it.  My "change" will now be "The cost now = what it was before already."
 Earthquake concussive / penetration damage swapped to 25/55 (was 60/25), so it works better vs buildings and less well against vehicles than at present.
 	The game would benefit from a "bonus vs buildings" damage type, but that would require a pretty extensive coding change.
-Garage cost down to 900 (was 1500), construction time down to 1000 (was 1500). 
+Garage included with Cybernetic Teleoperation, Garage cost down to 900 (was 1500), construction time down to 1000 (was 1500).
+Advanced Robot Manipulator Arm now has Advanced Vehicle Power Plant as its prerequisite.
 Guard post base cost down to 100 (was 250), explosion damage down to 200 (was 750), HP up to 750 (was 500).
 Panthers have more HP both pre and post upgrade, to 600->850 (was 500->750; Tiger is 800).  Research cost and scientist count increased to match new higher value.
 Tiger chassis cost up to 1000+400 (was 750+250).
 Extended Range Projectile Launcher upgrade is now Plymouth exclusive, while Grenade Loading Mechanism is Eden exclusive.
 EMP's base reload time slowed to 155 (was 140).
 	Eden still gets the original post-upgrade reload time of 120.
-Scout Class Drive Train research is now Plymouth only.  Eden gets a Lynx HP upgrade instead.
+Scout-Class Drive Train research is now Plymouth only.  Eden gets a Lynx HP upgrade instead.
 Advanced Robot Manipulator Arm tech's bonuses for Earthworker and Robo Dozer improved to 128->64 (was 128->96).
 Concrete Wall HP up to 450 (was 300).
 Hypnopaedia effect improved, for Eden 5000->3500, for Plymouth 5000->4000 (was 5000->3750 for Eden, 5000->4500 for Plymouth).
+All spaceship parts cost 25% less common and rare metals as they do in vanilla.
 
 
 Plymouth:
@@ -70,6 +75,7 @@ Various research time costs have changed to support the new ordering: Legged Rob
 ESG turning speed slower to 2 (was 11).
 Electromagnetic Reverberations research added: increases EMP Penetration "damage" to 320 (from 255), for (as I understand it) a better chance to land the disable.
 Rocket Atmospheric Re-entry System research cost increased to 5600 (was 4500), maximum scientists assignable up to 16 (was 14).
+Scout-Class Drive Train now requires Advanced Vehicle Power Plant, cost up to 2800 (was 1800), max scientists up to 14 (was 12).
 
 
 Eden:

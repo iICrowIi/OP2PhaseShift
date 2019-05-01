@@ -328,27 +328,16 @@ BEGIN_TECH "Recycler Postprocessing" 05306
     UNIT_PROP GORF Improved 1
 END_TECH 
 
-BEGIN_TECH "Robot-Assist Mechanic" 05051
-    CATEGORY        4
-    DESCRIPTION     "Structure Factories may now produce Garage structure kits.  Vehicle Factories may now produce Repair Vehicles.  _______________________________________ Robot-Assist Mechanics, installed at the Garage, are capable of doing most vehicle repairs.  A special version has been mounted on a vehicle for field repairs."
-    TEASER          "Allows production of Garage structure kits at the Structure Factory.  _______________________________________ Our cybernetics experts have proposed a new robot that can be used in repairing vehicles."
-    REQUIRES        03401
-    EDEN_COST       800
-    PLYMOUTH_COST   0
-    MAX_SCIENTISTS  8
-    LAB             2
-END_TECH
+;Removed tech.  These used to be Robot Assist Mechanic, Plymouth and Eden versions.
+BEGIN_TECH "NOT AVAILABLE" 05051
+    CATEGORY        0
+    COST            0
+END_TECH 
 
-BEGIN_TECH "Robot-Assist Mechanic" 05052
-    CATEGORY        4
-    DESCRIPTION     "Structure Factories may now produce Garage structure kits.  _______________________________________ Robot-Assist Mechanics, installed at the Garage, are capable of doing most vehicle repairs."
-    TEASER          "Allows production of Garage structure kits at the Structure Factory.  _______________________________________ Our cybernetics experts have proposed a new robot that can be used in repairing vehicles."
-    REQUIRES        03401
-    EDEN_COST       0
-    PLYMOUTH_COST   800
-    MAX_SCIENTISTS  6
-    LAB             2
-END_TECH
+BEGIN_TECH "NOT AVAILABLE" 05052
+    CATEGORY        0
+    COST            0
+END_TECH 
 
 ; Removed tech. This used to be Robotic Image Processing. light post and scout have this active by default now.
 ; Phase Shift maps will check against this to see if the mod is loaded.
@@ -388,7 +377,7 @@ BEGIN_TECH "Advanced Robotic Manipulator Arm" 07213
     DESCRIPTION     "ConVec, Earthworker, Robo-Dozer, Repair Vehicle, and Garage productivity improved.  _______________________________________  Several small refinements to the manipulator arms of these units, such as reconfigured joints, use of higher tensile strength metals in construction, and a software upgrade, add up to a substantial improvement in the production and repair rates of these units."
     TEASER          "Improves ConVec, Earthworker, Robo-Dozer, Repair Vehicle, and Garage productivity.  _______________________________________  Certain units, such as the ConVec, use manipulator arms to accomplish complex tasks.  Our cybernetic experts have a proposal for improving the flexibility and strength of these manipulator arms."
     IMPROVE_DESC    "Improved productivity"
-    REQUIRES        05102
+    REQUIRES        03901
     EDEN_COST       2800
     PLYMOUTH_COST   -1
     MAX_SCIENTISTS  16
@@ -405,7 +394,7 @@ BEGIN_TECH "Advanced Robotic Manipulator Arm" 07214
     DESCRIPTION     "ConVec, Earthworker, Robo-Dozer, and Garage productivity improved.  _______________________________________  Several small refinements to the manipulator arms of these units, such as reconfigured joints, use of higher tensile strength metals in construction, and a software upgrade, add up to a substantial improvement in the production and repair rates of these units."
     TEASER          "Improves ConVec, Earthworker, Robo-Dozer, and Garage productivity.  _______________________________________  Certain units, such as the ConVec, use manipulator arms to accomplish complex tasks.  Our cybernetic experts have a proposal for improving the flexibility and strength of these manipulator arms."
     IMPROVE_DESC    "Improved productivity"
-    REQUIRES        05102
+    REQUIRES        03901
     EDEN_COST       -1
     PLYMOUTH_COST   3200
     MAX_SCIENTISTS  14
@@ -602,9 +591,10 @@ BEGIN_TECH "Scout-class Drive Train Refit" 07206
     TEASER          "Increases Scout, Robo-Surveyor, and Lynx speeds. _______________________________________ The Scout, and some similar vehicles, use the G-75 drive train.  We have discovered a design flaw in the G-75 that impairs its efficiency.  This project would redesign the G-75 to make it more effective."
     IMPROVE_DESC    "Increased speed"
     REQUIRES        03851
+    REQUIRES        03901
     EDEN_COST       -1
-    PLYMOUTH_COST   1800
-    MAX_SCIENTISTS  12
+    PLYMOUTH_COST   2800
+    MAX_SCIENTISTS  14
     LAB             2
     UNIT_PROP LIGHT_TANK Move_Speed 2
     UNIT_PROP SURVEYOR Move_Speed 3
@@ -673,7 +663,6 @@ BEGIN_TECH "Electromagnetic Reverberations" 05509
     TEASER          "Improves chance to disable units with the EMP.  _______________________________________ Some enemy units, particularly well shielded ones, are resisting the effects of our EMP grenades.  We believe we can intensify the pulse if we ionize the air around the grenade as the pulse is released."
     IMPROVE_DESC    "Increased disable chance"
     REQUIRES        05508
-    REQUIRES        05201
     EDEN_COST       -1
     PLYMOUTH_COST   2800
     MAX_SCIENTISTS  16
@@ -1422,6 +1411,12 @@ BEGIN_TECH "03502 Vehicle Factory" 03502
     COST            0
 END_TECH
 
+BEGIN_TECH "05102 Garage" 05102
+    CATEGORY        0
+    REQUIRES        03401
+    COST            0
+END_TECH
+
 BEGIN_TECH "03601 Scout" 03601
     CATEGORY        0
     REQUIRES        03502
@@ -1482,13 +1477,6 @@ BEGIN_TECH "Guard Post" 03801
     CATEGORY        0
     REQUIRES        03407
     REQUIRES        03408
-    COST            0
-END_TECH
-
-BEGIN_TECH "Garage" 05102
-    CATEGORY        0
-    REQUIRES        05051
-    REQUIRES        05052
     COST            0
 END_TECH
 
