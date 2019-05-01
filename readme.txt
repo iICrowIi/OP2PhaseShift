@@ -14,7 +14,7 @@ An example Space Race map, Ohana, is also provided.  It depends on the Outpost U
 Version log:
 
 v0.5.0
-Updated packaged Ohana map and scenario to version 0.5, which fixes some terrain, makes the first common and first rare mine always the same variant, and replaces the backdoor 1-bar common with a 1-bar rare, and increases the initial metals for Medium and Low starting resources.
+Updated packaged Ohana map and scenario to version 0.5, which fixes some terrain, allows victory via either Starship launching OR Last One Standing conditions, makes the first common and first rare mine always the same variant, and replaces the backdoor 1-bar common with a 1-bar rare, and increases the initial metals for Medium and Low starting resources.
 GitHub release now features Ohana's source code.
 Common Ore Smelter, Rare Ore Smelter, and Robot Command Center costs reduced slightly.
 Robot-Assist Mechanic tech removed.  Garage is now available with Cybernetic Teleoperation.
